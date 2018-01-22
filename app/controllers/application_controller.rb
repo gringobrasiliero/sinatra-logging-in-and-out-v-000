@@ -29,10 +29,7 @@ if @user
        erb :error
      end
     end
-  end
-      erb :account
-
-  end
+end
 
   get '/logout' do
     session.clear
