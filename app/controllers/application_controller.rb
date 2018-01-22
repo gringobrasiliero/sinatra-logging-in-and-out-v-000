@@ -17,12 +17,7 @@ end
 
 
   get '/account' do
-    if Helpers.is_logged_in?(session)
-      @current_user = Helpers.current_user(session)
-      erb :account
-    else
-      erb :error
-    end
+    erb :account
   end
 
   get '/logout' do
